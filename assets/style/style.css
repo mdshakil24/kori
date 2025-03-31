@@ -93,18 +93,85 @@ p {
   margin: 0 auto;
 }
 
+.relative {
+  position: relative;
+}
+
 .header-area {
-  background: url("../images/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
+  position: relative;
+  margin-top: 15px;
+}
+.header-area .hero-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 20px;
 }
 .header-area .header-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 35px 0;
 }
-.header-area .header-content .header-left-content .header-left-google-logo img {
-  margin-top: -20px;
+.header-area .header-left-content {
+  display: flex;
+  flex-direction: row;
+}
+.header-area .header-left-content .header-left-google-logo img {
+  width: 100px;
+  height: auto;
+  margin-top: -55px;
+}
+.header-area .header-left-content .header-left-logo img {
+  max-width: 394px;
+  width: 100%;
+  height: auto;
+  margin-left: 25px;
+}
+.header-area .header-right-content .header-right-button, .header-area .header-right-content .button {
+  display: flex;
+  align-items: center;
+}
+.header-area .header-right-content .header-right-button a, .header-area .header-right-content .button a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #23125D;
+  text-transform: inherit;
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+.header-area .header-right-content .header-right-button a svg, .header-area .header-right-content .button a svg {
+  margin-right: 10px;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+.header-area .header-right-content .header-right-button a:first-child, .header-area .header-right-content .button a:first-child {
+  background-color: #C9EF3C;
+}
+.header-area .header-right-content .header-right-button a:first-child:hover svg, .header-area .header-right-content .button a:first-child:hover svg {
+  fill: #fff;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+.header-area .header-right-content .header-right-button a:first-child:hover, .header-area .header-right-content .button a:first-child:hover {
+  background-color: transparent;
+  border: 1px solid #C9EF3C;
+  color: #ffffff;
+}
+.header-area .header-right-content .header-right-button a:last-child, .header-area .header-right-content .button a:last-child {
+  background-color: transparent;
+  border: 1px solid #C9EF3C;
+  color: #FFFFFF;
+  margin: 0 15px;
+}
+.header-area .hero-content {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

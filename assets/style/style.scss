@@ -1,4 +1,5 @@
 $bg-color: #ffffff;
+
 body {
   background: $bg-color;
   padding: 0 35px;
@@ -63,6 +64,7 @@ h2 {
   text-transform: uppercase;
   line-height: 1.3;
 }
+
 h2.bb {
   border-bottom: 5px solid #ff314f;
   line-height: 1;
@@ -86,28 +88,123 @@ p {
   text-transform: inherit;
   line-height: 1.4;
 }
+
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
+
+.relative {
+  position: relative;
+}
+
 //===========> Start Header Area Css
 .header-area {
-  background: url("../images/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
+  position: relative;
+  margin-top: 15px;
+
+  .hero-banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-position: top;
+    border-radius: 20px;
+  }
+
   .header-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    .header-left-content {
-      .header-left-google-logo {
-        img {
-          margin-top: -20px;
-        }
+    padding: 35px 0;
+  }
+
+  .header-left-content {
+    display: flex;
+    flex-direction: row;
+
+    .header-left-google-logo {
+      img {
+        width: 100px;
+        height: auto;
+        margin-top: -55px;
       }
     }
+
+    .header-left-logo {
+      img {
+        max-width: 394px;
+        width: 100%;
+        height: auto;
+        margin-left: 25px;
+      }
+    }
+
   }
+
+  .header-right-content {
+    .header-right-button,.button {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #23125D;
+        text-transform: inherit;
+        display: flex;
+        align-items: center;
+        padding: 8px 13px;
+        border-radius: 30px;
+        border: 1px solid transparent;
+        transition: .3s;
+
+        svg {
+          margin-right: 10px;
+          transition: fill 0.3s ease, transform 0.3s ease; // Ensure smooth transition
+        }
+
+        &:first-child {
+          background-color: #C9EF3C;
+          &:hover {
+            svg {
+              fill: #fff; // Change the SVG color
+              color: #FFFFFF;
+              transform: scale(1.1); // Optional: Add a slight zoom effect
+            }
+          }
+          &:hover {
+            background-color: transparent;
+            border: 1px solid #C9EF3C;
+            color: #ffffff;
+
+            
+          }
+        }
+
+        &:last-child {
+          background-color: transparent;
+          border: 1px solid #C9EF3C;
+          color: #FFFFFF;
+          margin: 0 15px;
+          &:hover {
+
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+  }
+
+
 }
