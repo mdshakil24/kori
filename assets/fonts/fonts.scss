@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Noka Trial";
+  src: url("../fonts/NokaTrial-Hairline.woff2") format("woff2"),
+    url("../fonts/NokaTrial-Hairline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noka Trial";
+  src: url("../fonts/NokaTrial-Bold.woff2") format("woff2"),
+    url("../fonts/NokaTrial-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noka Trial";
+  src: url("../fonts/NokaTrial-Black.woff2") format("woff2"),
+    url("../fonts/NokaTrial-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noka Trial";
+  src: url("../fonts/NokaTrial-Light.woff2") format("woff2"),
+    url("../fonts/NokaTrial-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noka Trial";
+  src: url("../fonts/NokaTrial-Medium.woff2") format("woff2"),
+    url("../fonts/NokaTrial-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "../fonts/Noka Trial";
+  src: url("NokaTrial-Semibold.woff2") format("woff2"),
+    url("NokaTrial-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

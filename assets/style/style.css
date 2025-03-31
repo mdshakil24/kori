@@ -1,0 +1,110 @@
+body {
+  background: #ffffff;
+  padding: 0 35px;
+  font-family: "Noka Trial";
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+}
+
+p {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: #000;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 28px;
+  color: #0f1418;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+h2.bb {
+  border-bottom: 5px solid #ff314f;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 21px;
+  color: #0f1418;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d3237;
+  text-transform: inherit;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-area {
+  background: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.header-area .header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-area .header-content .header-left-content .header-left-google-logo img {
+  margin-top: -20px;
+}/*# sourceMappingURL=style.css.map */
